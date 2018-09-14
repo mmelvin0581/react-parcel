@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "precommit": "pretty-quick --staged"
   },
   "dependencies": {
     "husky": "^1.0.0-rc.14",
@@ -19,10 +20,5 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "parcel-bundler": "^1.9.7"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   }
 }

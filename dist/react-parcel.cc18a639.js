@@ -21144,7 +21144,7 @@ if ('development' === 'production') {
   module.exports = require('./cjs/react-dom.development.js');
 }
 },{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"src/containers/App/App.js":[function(require,module,exports) {
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -21152,7 +21152,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -21174,12 +21174,16 @@ var App = function (_Component) {
   }
 
   _createClass(App, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
-        'div',
+        "div",
         null,
-        'Hello'
+        _react2.default.createElement(
+          "h1",
+          null,
+          "Hello, World!"
+        )
       );
     }
   }]);
@@ -21304,7 +21308,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55535' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56613' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
