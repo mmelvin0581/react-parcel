@@ -1,6 +1,5 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import "abstracts/allAbstracts";
+@import "base/allBase";
+@import "components/allComponents";
+@import "layout/allLayout";
+@import "pages/allPages";
